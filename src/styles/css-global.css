@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+:root {
+    --font-p: "Secular One", serif;
+}
 
 * {
     margin: 0;
@@ -20,12 +24,39 @@ body {
 header {
     position: relative;
     background-color: transparent;
+    font-family: var(--font-p);
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    gap: 5em;
     width: 100%;
     height: 3.5em;
+}
+
+nav {
+    display: flex;
+    gap: 5em;
+    width: 100%;
+}
+a {
+    position: relative;
+    text-decoration: none;
+    color:#000000;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color:  #ffd700;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+a:hover:after {
+    width: 100%;
+    font-size: 17px;
 }
 
 header > img {
@@ -98,6 +129,7 @@ header > img {
 }
 
 .botoes{
+    font-family: var(--font-p);
     padding: 10px;
     border-radius: 50px;
     width: 90px;
@@ -105,14 +137,14 @@ header > img {
     color: white;
 }
 .pizza{
-    background-color:#FF0000 ;
+    background-color:#ff000096 ;
 }
 .refri{
-    background-color:#ffff00;
+    background-color:#ffff0096;
     text-shadow: 1px 1px 15px black;
 }
 .porcoes{
-    background-color:#ffd700 ;
+    background-color:#ffd90091 ;
 }
 
 .cardapio-pizzas {
