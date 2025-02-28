@@ -21,6 +21,11 @@ body {
     height: 7px;
 }
 
+.banner {
+    background: url(../imagens/BANNER-TOPO.jpg)no-repeat center/cover;
+    height: 120vh;
+    width: 100%;
+}
 header {
     position: relative;
     background-color: transparent;
@@ -29,11 +34,15 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 3.5em;
+    height: 5em;
 }
 
+.logo {
+    margin: 2em 3em 0 1em;
+}
 nav {
     display: flex;
+    margin: 4em auto;
     gap: 5em;
     width: 100%;
 }
@@ -64,16 +73,6 @@ header > img {
     width: 100px;
     height: 120px;
     margin: 4em 15rem 0 3em;
-}
-
-.banner {
-    height: 69.5vh;
-}
-.pizza-banner {
-    position: absolute;
-    top: 0;  
-    left: 70%;
-    height: 100vh;
 }
 .h1-container {
     display: flex;
@@ -117,10 +116,6 @@ header > img {
     color: #ffd700;
 }
 
-.cardapio {
-
-}
-
 .navegacao {
     display: flex;
     align-items: center;
@@ -130,22 +125,39 @@ header > img {
 
 .botoes{
     font-family: var(--font-p);
+    font-weight: bolder;
     padding: 10px;
     border-radius: 50px;
     width: 90px;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 .pizza{
-    background-color:#ff000096 ;
+    background-color:#ac0c0cd0 ;
 }
 .refri{
-    background-color:#ffff0096;
-    text-shadow: 1px 1px 15px black;
+    background-color:#21661bbe;
 }
 .porcoes{
-    background-color:#ffd90091 ;
+    background-color:#ffbb00d5 ;
 }
+.pizza:hover{
+    background-color:#ac0c0cfb;
+}
+.refri:hover{
+    background-color:#21661b;
+}
+.porcoes:hover{
+    background-color:#ffae00;
+
+}
+.pizza:hover, .porcoes:hover, .refri:hover {
+    font-size: 17px;
+    box-shadow: 0px 0px 8px gray;
+}
+
+
 
 .cardapio-pizzas {
     display: grid;
