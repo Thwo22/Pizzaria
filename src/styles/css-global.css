@@ -175,16 +175,24 @@ header > img {
 }
 
 .pizza-box {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: solid 2px black;
-    width: 10em;
-    height: 17em ;
-    margin: 3px auto;
+    width: 9.5em;
+    height: 17em;
+    margin: auto;
 }
 
-.pizza-imagem {
-    background-color: brown;
+.produto {
+    position: relative;
+    align-items: center;
+    justify-content: center;
     width: 145px;
     height: 145px;
-    margin: 5px auto;
+    margin: 5px 2px;
+}
+
+.produto >img {
+    margin: auto;
+    width: 140px;
+    height: 140px;
 }
