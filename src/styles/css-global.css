@@ -118,7 +118,7 @@ header > img {
     color: #ffd700;
 }
 
-.navegacao {
+.navegacao-btn {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -182,7 +182,7 @@ header > img {
     margin: auto;
 }
 
-.produto {
+.produto-container {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -191,8 +191,65 @@ header > img {
     margin: 5px 2px;
 }
 
-.produto >img {
+.produto-container >img {
     margin: auto;
     width: 140px;
     height: 140px;
+    border-radius: 50%;
+}
+
+.pizza-title, .pizza-value {
+    text-align: center;
+    padding: 3px;  
+}
+
+.pizza-title {
+    font: normal small-caps lighter 9px var(--font-p);
+}
+
+.pizza-value {
+    font: normal small-caps lighter 17px var(--font-p);
+    color: #ffae00;
+}
+
+.peso {
+    font: normal small-caps lighter 12px var(--font-p);
+}
+
+/*ANIMAÇÇÃO DOS CONTAINERS DE PRODUTOS*/
+
+.pizza-box:hover{
+    background: linear-gradient(to bottom,  rgb(179, 34, 34), rgb(255, 255, 255));
+    background-size: 100% 60%;
+    background-position: top;
+    background-repeat: no-repeat;
+    border: solid 3px rgb(179, 34, 34);
+    width: 9.5em;
+    height: 18em;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
+
+/*botoes de navegação */
+
+.navegacao {
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 10em;
+    height: 3em;
+}
+.btn {
+    all: unset;
+    width: 35px;
+    border: #ffae00 2px solid;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--font-h1);
+}
+.btn:hover {
+    background-color:#ac0c0cfb;
+    color: white;
+    transition-duration: 0.3s;
 }
