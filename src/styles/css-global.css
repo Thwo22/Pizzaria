@@ -161,7 +161,7 @@ header > img {
 
 
 
-.cardapio-pizzas {
+.cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -174,7 +174,7 @@ header > img {
     width: 60em;
 }
 
-.pizza-box {
+.box {
     background-color: rgb(255, 255, 255);
     border: solid 2px black;
     width: 9.5em;
@@ -198,16 +198,16 @@ header > img {
     border-radius: 50%;
 }
 
-.pizza-title, .pizza-value {
+.title, .value {
     text-align: center;
     padding: 3px;  
 }
 
-.pizza-title {
+.title {
     font: normal small-caps lighter 9px var(--font-p);
 }
 
-.pizza-value {
+.value {
     font: normal small-caps lighter 17px var(--font-p);
     color: #ffae00;
 }
@@ -218,7 +218,7 @@ header > img {
 
 /*ANIMAÇÇÃO DOS CONTAINERS DE PRODUTOS*/
 
-.pizza-box:hover{
+.box:hover{
     background: linear-gradient(to bottom,  rgb(179, 34, 34), rgb(255, 255, 255));
     background-size: 100% 60%;
     background-position: top;
