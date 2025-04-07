@@ -45,12 +45,12 @@
 
         <div class="cardapio">
             <div class="navegacao-btn">
-                <div class="pizza botoes">PIZZA</div>
-                <div class="refri botoes">REFRI</div>
-                <div class="porcoes botoes">PORÇÕES</div>
+                <div class="pizza botoes" id="btn-pizza">PIZZA</div>
+                <div class="porcoes botoes" id="btn-porcoes">PORÇÕES</div>
+                <div class="refri botoes" id="btn-refri">REFRI</div>
             </div>
 
-            <div class="cardapio-pizzas">
+            <div class="cardapio-pizzas" id="pizzas">
                 <div class="box" class="calabresa">
 
                     <div class="produto-container">
@@ -172,9 +172,7 @@
                 </div>
             </div>
 
-            /*PORCOES*/
-
-            <div class="cardapio-porcoes">
+            <div class="cardapio-porcoes hidden" id="porcoes">
                 <div class="box" class="calabresa">
 
                     <div class="produto-container">
@@ -296,9 +294,7 @@
                 </div>
             </div>
 
-                /*REFRI*/
-
-            <div class="cardapio-refri">
+            <div class="cardapio-refri hidden" id="refris">
                 <div class="box" class="calabresa">
 
                     <div class="produto-container">
@@ -419,14 +415,6 @@
 
                     </div>
             </div>
-
-        <div class="navegacao">
-
-            <button class="btn" id="btn-pizza">1</button>
-            <button class="btn" id="btn-porcao">2</button>
-            <button class="btn" id="btn-refri">3</button>
-
-        </div>
     </main>
 
     <footer>
@@ -449,5 +437,6 @@
             </div>
         </div>
     </footer>
+    <script src="src/script/script.js"></script>
 </body>
 </html>

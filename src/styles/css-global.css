@@ -159,9 +159,15 @@ header > img {
     box-shadow: 0px 0px 8px gray;
 }
 
-
+.cardapio {
+    position: relative;
+}
 
 .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -172,6 +178,13 @@ header > img {
     margin: auto;
     height: 40em;
     width: 60em;
+    transition: opacity 0.5s ease;
+}
+.cardapio-pizzas {
+    opacity: 1;
+} 
+.cardapio-porcoes, .cardapio-refri {
+    opacity: 0;
 }
 
 .box {
@@ -227,29 +240,5 @@ header > img {
     width: 9.5em;
     height: 18em;
     border-radius: 8px;
-    transition-duration: 0.3s;
-}
-
-/*botoes de navegação */
-
-.navegacao {
-    margin: auto;
-    align-items: center;
-    justify-content: space-around;
-    width: 10em;
-    height: 3em;
-}
-.btn {
-    all: unset;
-    width: 35px;
-    border: #ffae00 2px solid;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: var(--font-h1);
-}
-.btn:hover {
-    background-color:#ac0c0cfb;
-    color: white;
     transition-duration: 0.3s;
 }
