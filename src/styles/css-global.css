@@ -179,20 +179,34 @@ header > img {
     height: 40em;
     width: 60em;
     transition: opacity 0.5s ease;
+    z-index: 1;
 }
 .cardapio-pizzas {
     opacity: 1;
 } 
 .cardapio-porcoes, .cardapio-refri {
+    pointer-events: none;
     opacity: 0;
 }
 
 .box {
+    cursor: pointer;
     background-color: rgb(255, 255, 255);
     border: solid 2px black;
     width: 9.5em;
     height: 17em;
     margin: auto;
+}
+.box:hover{
+    background: linear-gradient(to bottom,  rgb(179, 34, 34), rgb(255, 255, 255));
+    background-size: 100% 60%;
+    background-position: top;
+    background-repeat: no-repeat;
+    border: solid 3px rgb(179, 34, 34);
+    width: 9.5em;
+    height: 18em;
+    border-radius: 8px;
+    transition-duration: 0.3s;
 }
 
 .produto-container {
@@ -227,18 +241,4 @@ header > img {
 
 .peso {
     font: normal small-caps lighter 12px var(--font-p);
-}
-
-/*ANIMAÇÇÃO DOS CONTAINERS DE PRODUTOS*/
-
-.box:hover{
-    background: linear-gradient(to bottom,  rgb(179, 34, 34), rgb(255, 255, 255));
-    background-size: 100% 60%;
-    background-position: top;
-    background-repeat: no-repeat;
-    border: solid 3px rgb(179, 34, 34);
-    width: 9.5em;
-    height: 18em;
-    border-radius: 8px;
-    transition-duration: 0.3s;
 }
