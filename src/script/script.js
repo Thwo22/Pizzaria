@@ -14,15 +14,27 @@ botaoPizza.addEventListener(`click`, () => {
     cardapioRefris.style.opacity = "0";
     cardapioPorcoes.style.opacity = "0";
     cardapioPizzas.style.opacity = "1";
-    cardapioPizzas.style.pointerEvents = "auto";
-    cardapioPizzas.style.zIndex = "2"
+    
+    cardapioPorcoes.style.pointerEvents = "none";
+    cardapioRefris.style.pointerEvents = "none";
+    cardapioPizzas.style.pointerEvents = "auto"
+
+    cardapioPorcoes.style.zIndex= "1";
+    cardapioRefris.style.zIndex = "1"
+    cardapioPizzas.style.zIndex = "2";
 });
 
 botaoRefri.addEventListener(`click`, () => {
     cardapioPizzas.style.opacity = "0";
     cardapioPorcoes.style.opacity = "0";
-    cardapioRefris.style.opacity = "1"
+    cardapioRefris.style.opacity = "1";
+
+    cardapioPizzas.style.pointerEvents = "none";
+    cardapioPorcoes.style.pointerEvents = "none";
     cardapioRefris.style.pointerEvents = "auto";
+
+    cardapioPizzas.style.zIndex= "1";
+    cardapioPorcoes.style.zIndex= "1";
     cardapioRefris.style.zIndex = "2"
 });
 
@@ -30,7 +42,13 @@ botaoPorcoes.addEventListener(`click`, () => {
     cardapioPizzas.style.opacity = "0";
     cardapioRefris.style.opacity = "0";
     cardapioPorcoes.style.opacity = "1"
+
+    cardapioPizzas.style.pointerEvents = "none";
+    cardapioRefris.style.pointerEvents = "none";
     cardapioPorcoes.style.pointerEvents = "auto";
+
+    cardapioPizzas.style.zIndex= "1";
+    cardapioRefris.style.zIndex= "1";
     cardapioPorcoes.style.zIndex = "2"
 });
 
