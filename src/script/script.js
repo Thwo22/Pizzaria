@@ -10,6 +10,12 @@ const secaoContato= document.getElementById("contato");
 const botaoCardapio= document.getElementById("btn-cardapio");
 const secaoCardapio= document.getElementById("cardapio");
 
+const caixas= document.querySelectorAll(`.box`);
+const containerButtonBuy= document.querySelectorAll(`.buy-btn`);
+const numeroQuantidade= document.querySelectorAll(`.quantidade`);
+const botoesAdd= document.querySelectorAll(`.buttonAdd`);
+const botoesRemove= document.querySelectorAll(`.buttonRemove`)
+
 botaoPizza.addEventListener(`click`, () => {
     cardapioRefris.style.opacity = "0";
     cardapioPorcoes.style.opacity = "0";
@@ -62,5 +68,37 @@ secaoContato.addEventListener(`click`, () => {
         behavior: `smooth`
     });
 });
+
+for (let box of caixas) {
+    box.addEventListener(`mouseenter`, () => {
+        const interno = box.querySelector(`.buy-btn`);
+        interno.style.opacity = "1";
+    });
+    
+    box.addEventListener(`mouseleave`, () => {
+        const interno = box.querySelector(`.buy-btn`);
+        interno.style.opacity = "0";
+    });
+}
+
+for (let caixa of caixas) {
+const botaoAdd = caixa.querySelector('.buttonAdd');
+const botaoRemove = caixa.querySelector('.buttonRemove');
+const numeroQuantidade = caixa.querySelector('.quantidade');
+
+let quantidade = 0;
+
+botaoAdd.addEventListener('click', () => {
+    quantidade++;
+    numeroQuantidade.textContent = quantidade;
+});
+
+botaoRemove.addEventListener('click', () => {
+    if (quantidade > 0) {
+    quantidade--;
+    numeroQuantidade.textContent = quantidade;
+    }
+});
+}
 
 

@@ -207,9 +207,34 @@ header > img {
     background-repeat: no-repeat;
     border: solid 3px rgb(179, 34, 34);
     width: 9.5em;
-    height: 18em;
+    height: 18.5em;
     border-radius: 8px;
     transition-duration: 0.3s;
+}
+
+.buy-btn {
+    font-family: var(--font-p);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    margin: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 60px;
+    z-index: 3;
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+.buttonAdd, .buttonRemove {
+    all: unset;
+    text-align: center;
+    color: black;
+    background: linear-gradient(to right, orange, yellow);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px black solid;
 }
 
 .produto-container {
