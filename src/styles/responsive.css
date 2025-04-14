@@ -9,17 +9,6 @@
         width: 100%;
     }
 
-    .foto-promocao > img {
-        height: 35em;
-        width: 35em;
-    }
-
-    .h1-promocao {
-        height: 22em;
-        width: 35em;
-        font-size: 26px;
-        padding: 20px;
-    }
     footer {
         margin: 40em auto 0;
     }
@@ -37,16 +26,6 @@
         width: 100%;
     }
 
-    .foto-promocao > img {
-        height: 30em;
-        width: 30em;
-    }
-
-    .h1-promocao {
-        height: 22em;
-        width: 35em;
-        padding: 20px;
-    }
     footer {
         margin: 40em auto 0;
     }
@@ -66,16 +45,6 @@
         overflow-x: hidden;
     }
 
-    .foto-promocao > img {
-        height: 30em;
-        width: 30em;
-    }
-
-    .h1-promocao {
-        height: 22em;
-        width: 35em;
-        padding: 20px;
-    }
     footer {
         margin: 40em auto 0;
     }
@@ -114,29 +83,10 @@
         font-size: 18px;
         color: rgb(0, 0, 0);
     }
-
-    .container-promocao {
-        height: 75vh;
-    }
-
-    .foto-promocao > img {
-        height: 25em;
-        width: 25em;
-    }
-
-    .h1-promocao {
-        height: 22em;
-        font-size: 16px;
-        width: 35em;
-        padding: 20px;
-    }
     
     .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
-        top: 30%;
-        left: 50%;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, auto);
-        padding: 100px 100px;
+        padding: 100px 125px;
     }
     
     .box {
@@ -146,7 +96,7 @@
     }
 
     footer {
-        margin: 40em auto 0;
+        margin: 45em auto 0;
     }
 
     .MinhasInf {
@@ -189,22 +139,6 @@
     .guias {
         font-size: 18px;
         color: white;
-    }
-
-    .container-promocao {
-        height: 60vh;
-    }
-
-    .foto-promocao > img {
-        height: 20em;
-        width: 20em;
-    }
-
-    .h1-promocao {
-        height: 22em;
-        font-size: 14px;
-        width: 35em;
-        padding: 20px;
     }
     
     .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
@@ -266,28 +200,9 @@
         font-size: 18px;
         color: white;
     }
-
-    .container-promocao {
-        height: 60vh;
-    }
-
-    .foto-promocao > img {
-        height: 20em;
-        width: 20em;
-    }
-
-    .h1-promocao {
-        height: 22em;
-        font-size: 14px;
-        width: 35em;
-        padding: 20px;
-    }
     
     .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
-        top: 30%;
-        left: 50%;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
         padding: 100px 200px;
     }
     
@@ -345,27 +260,8 @@
         color: white;
     }
 
-    .container-promocao {
-        height: 60vh;
-    }
-
-    .foto-promocao > img {
-        height: 20em;
-        width: 20em;
-    }
-
-    .h1-promocao {
-        height: 30em;
-        font-size: 10px;
-        width: 35em;
-        padding: 20px;
-    }
-    
     .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
-        top: 30%;
-        left: 50%;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
         padding: 100px 250px;
     }
     
@@ -425,26 +321,6 @@
     .guias {
         font-size: 12px;
         color: rgb(255, 255, 255);
-    }
-
-    .container-promocao {
-        height: 45vh;
-    }
-
-    .foto-promocao {
-        height: 0px;
-    }
-
-    .foto-promocao > img {
-        height: 15em;
-        width: 15em;
-    }
-
-    .h1-promocao {
-        height: 29em;
-        width: 43%;
-        font-size: 8px;
-        padding: 10px;
     }
 
     .navegacao-btn {
