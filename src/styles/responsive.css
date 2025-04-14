@@ -122,12 +122,12 @@
 }
 
 /*CELULAR*/
-@media screen and (min-width: 350px) and (max-width:480px) {
+@media screen and  (max-width:480px) {
 
     header {
         background-color: rgba(0, 0, 0, 0.39);
         height: 4em;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         z-index: 4;
     }
@@ -139,8 +139,8 @@
 
     .logo {
         margin: 0 20px 0 1em;
-        width: 55px;
-        height: 70px;
+        width: 35px;
+        height: 50px;
         padding: 0;
     }
 
@@ -194,6 +194,7 @@
         margin: 32em auto 0;
         width: 100vw;
         height: 55vh;
+        margin: 20px;
     }
     
     .final {
@@ -201,22 +202,7 @@
     }
 
     footer {
-        font-family: var(--font-footer);
-        font-weight: lighter;
-        font-size: 12px;
-        text-align: center;
-        color:white;
-        margin: 32em auto 0;
-        position: relative;
-        background: url(../imagens/footer.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100vw;
-        height: 90vh;
-    }
-
-    footer {
-        margin: 137em auto 0;
+        margin: 147em auto 0;
         font-size: 8px;
     }
 
