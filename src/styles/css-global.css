@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+body {
     background-color: white;
     overflow-x: hidden;
 }
@@ -91,8 +91,9 @@ header > img {
 }
 
 .produtos > img {
-    width: 450px;
-    height: 250px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 
 .container-promocao {
@@ -241,8 +242,9 @@ header > img {
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 145px;
-    height: 145px;
+    width: 100%;
+    max-width: 140px;
+    height: auto;
     margin: 5px 2px;
 }
 
@@ -288,7 +290,7 @@ footer {
 
 .final {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 70%;
     align-items: center;
     justify-content: space-around;
@@ -299,6 +301,6 @@ footer {
     background-color: black;
     height: 5em;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 100%;
 }

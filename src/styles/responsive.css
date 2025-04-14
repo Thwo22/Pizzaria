@@ -1,9 +1,168 @@
 /*AQUI EU FAÇO AS MEDIAS QUERIES NO SENTIDO DESKTOP FIRST.*/
 
-/*NOTEBOOKS*/
+/*TV*/
+@media (min-width:1163px) {
 
-@media (min-width:661px) and (max-width:1276px){
+
+    .banner {
+        height: 120vh;
+        width: 100%;
+    }
+
+    .foto-promocao > img {
+        height: 35em;
+        width: 35em;
+    }
+
+    .h1-promocao {
+        height: 22em;
+        width: 35em;
+        font-size: 26px;
+        padding: 20px;
+    }
+    footer {
+        margin: 40em auto 0;
+    }
+
+    .MinhasInf {
+        height: 5em;
+    }
+}
+
+/*DESKTOPS MAIORES*/
+@media (min-width:1040px) and (max-width:1162px){
+
+    .banner {
+        height:115vh;
+        width: 100%;
+    }
+
+    .foto-promocao > img {
+        height: 30em;
+        width: 30em;
+    }
+
+    .h1-promocao {
+        height: 22em;
+        width: 35em;
+        padding: 20px;
+    }
+    footer {
+        margin: 40em auto 0;
+    }
+
+    .MinhasInf {
+        height: 5em;
+    }
+}
+
+
+/*DESKTOPS*/
+@media (min-width:921px) and (max-width:1039px){
+
     
+    body, html {
+        background-color: white;
+        overflow-x: hidden;
+    }
+
+    .foto-promocao > img {
+        height: 30em;
+        width: 30em;
+    }
+
+    .h1-promocao {
+        height: 22em;
+        width: 35em;
+        padding: 20px;
+    }
+    footer {
+        margin: 40em auto 0;
+    }
+
+    .MinhasInf {
+        height: 5em;
+    }
+}
+
+/*TELAS GRANDES*/
+@media (min-width:767px) and (max-width:920px){
+    
+    body, html {
+        background-color: white;
+        overflow-x: hidden;
+    }
+
+    .banner {
+        height:85vh;
+        width: 100%;
+    }
+
+    .logo {
+        margin: 1em 1em 0 1em;
+        width: 80px;
+        height: 80px;
+    }
+
+    nav {
+        margin: 4em auto;
+        gap: 2em;
+        width: 100%;
+    }
+
+    .guias {
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+    }
+
+    .container-promocao {
+        height: 75vh;
+    }
+
+    .foto-promocao > img {
+        height: 25em;
+        width: 25em;
+    }
+
+    .h1-promocao {
+        height: 22em;
+        font-size: 16px;
+        width: 35em;
+        padding: 20px;
+    }
+    
+    .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
+        top: 30%;
+        left: 50%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        padding: 100px 100px;
+    }
+    
+    .box {
+        width: 9.5em;
+        height: 17em;
+        margin: 0 auto 2em;
+    }
+
+    footer {
+        margin: 40em auto 0;
+    }
+
+    .MinhasInf {
+        height: 5em;
+    }
+}
+
+/*TELAS MEDIA-ALTA*/
+
+@media (min-width:661px) and (max-width:766px){
+    
+    body, html {
+        background-color: white;
+        overflow-x: hidden;
+    }
+
     header {
         background-color: rgba(0, 0, 0, 0.349);
         height: 4em;
@@ -74,6 +233,12 @@
 /*TELAS MEDIAS*/
 @media (min-width: 558px) and (max-width:660px){
 
+    
+    body, html {
+        background-color: white;
+        overflow-x: hidden;
+    }
+
     header {
         background-color: rgba(0, 0, 0, 0.349);
         height: 4em;
@@ -143,6 +308,12 @@
 
 /*TABLETS*/
 @media (min-width:460px) and (max-width: 557px) {
+    
+    body, html {
+        background-color: white;
+        overflow-x: hidden;
+    }
+
     header {
         background-color: rgba(0, 0, 0, 0.39);
         height: 4em;
@@ -222,6 +393,11 @@
 /*CELULAR*/
 @media screen and  (max-width:459px) {
 
+    body, html {
+        background-color: white;
+        overflow-x: hidden;
+    }
+
     header {
         background-color: rgba(0, 0, 0, 0.39);
         height: 4em;
@@ -231,7 +407,7 @@
     }
 
     .banner {
-        height: 45vh;
+        height: 40vh;
         width: 100%;
     }
 
