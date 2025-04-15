@@ -13,17 +13,19 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     background-color: white;
     overflow-x: hidden;
 }
 
+/*tarja amarela que divide ponta a pointa da página*/
 .linha-quebra {
     background-color: #ffd700;
     width: 100%;
     height: 7px;
 }
 
+/*banner no tipo do site*/
 .banner {
     background: url(../imagens/BANNER-TOPO.jpg)no-repeat center/cover;
     height: 100vh;
@@ -40,9 +42,13 @@ header {
     height: 5em;
 }
 
+/*logo da empresa localizada no header*/
 .logo {
     margin: 2em 3em 0 1em;
+    width: 100px;
+    height: 120px;
 }
+
 nav {
     display: flex;
     margin: 4em auto;
@@ -50,12 +56,13 @@ nav {
     width: 100%;
 }
 
+/*links do header (navs)*/
 a {
     position: relative;
     text-decoration: none;
     color:#000000;
 }
-
+/*animação de sublinhado nas navs*/
 a:after {
     content: "";
     position: absolute;
@@ -72,62 +79,14 @@ a:hover:after {
     font-size: 17px;
 }
 
-header > img {
-    width: 100px;
-    height: 120px;
-    margin: 4em 15rem 0 3em;
-}
-.h1-container {
-    display: flex;
-    width: 33%;
-    height: 30vh;
-    margin: 5em 1em 3em 4em;
-}
-
-.produtos {
-    position: absolute;
-    top:55%;
-    left: 4%;
-}
-
-.produtos > img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-}
-
-.container-promocao {
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-    background-color: #FF0000;
-    height: 90vh;
-}
-.promocao {
-    height: 34em;
-}
-.h1-promocao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: right;
-    font-size: 20px;
-    font-family: var(--font-h1);
-    color:white;
-    height: 85vh;
-    width: 25vw;
-}
-.especial {
-    color: #ffd700;
-}
-
+/*posições dos botoes de cardápio*/
 .navegacao-btn {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 30vh;
 }
-
+/*estilos dos botoes de cardápio*/
 .botoes{
     font-family: var(--font-p);
     font-weight: bolder;
@@ -138,6 +97,7 @@ header > img {
     color: white;
     cursor: pointer;
 }
+/*estilização indivual de cada botão*/
 .pizza{
     background-color:#ac0c0cd0 ;
 }
@@ -147,6 +107,7 @@ header > img {
 .porcoes{
     background-color:#ffbb00d5 ;
 }
+/*animações inviduais de cada botao*/
 .pizza:hover{
     background-color:#ac0c0cfb;
 }
@@ -157,15 +118,17 @@ header > img {
     background-color:#ffae00;
 
 }
+/*animações em comum dos botões*/
 .pizza:hover, .porcoes:hover, .refri:hover {
     font-size: 17px;
     box-shadow: 0px 0px 8px gray;
 }
 
+/*container do cardápio de todos os produtos*/
 .cardapio {
     position: relative;
 }
-
+/*estilização de todos os cardápios disponiveis em GRID*/
 .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
     position: absolute;
     top: 70%;
@@ -185,6 +148,7 @@ header > img {
     z-index: 1;
 
 }
+/*Hierarquia de cada cardápio (para Javascript)*/
 .cardapio-pizzas {
     opacity: 1;
 } 
@@ -193,6 +157,7 @@ header > img {
     opacity: 0;
 }
 
+/*Estilização e animação de todas as boxes do cardápio*/
 .box {
     cursor: pointer;
     background-color: rgb(255, 255, 255);
@@ -213,6 +178,7 @@ header > img {
     transition-duration: 0.3s;
 }
 
+/*container dos botoes de Adição e subtração de produto*/
 .buy-btn {
     font-family: var(--font-p);
     position: relative;
@@ -238,6 +204,7 @@ header > img {
     border: 1px black solid;
 }
 
+/*Estilização de tudo que há dentro das boxes*/
 .produto-container {
     position: relative;
     align-items: center;
@@ -247,32 +214,28 @@ header > img {
     height: auto;
     margin: 5px 2px;
 }
-
 .produto-container >img {
     margin: auto;
     width: 140px;
     height: 140px;
     border-radius: 50%;
 }
-
 .title, .value {
     text-align: center;
     padding: 3px;  
 }
-
 .title {
     font: normal small-caps lighter 9px var(--font-p);
 }
-
 .value {
     font: normal small-caps lighter 17px var(--font-p);
     color: #ffae00;
 }
-
 .peso {
     font: normal small-caps lighter 12px var(--font-p);
 }
 
+/*Estilização do final da página.*/
 footer {
     font-family: var(--font-footer);
     font-weight: lighter;
@@ -287,7 +250,7 @@ footer {
     width: 100vw;
     height: 90vh;
 }
-
+/*redes ficticías da empresa*/
 .final {
     position: absolute;
     width: 100%;
@@ -296,7 +259,7 @@ footer {
     justify-content: space-around;
     display: flex;
 }
-
+/*Redes do Desenvolvedor*/
 .MinhasInf {
     background-color: black;
     height: 5em;
