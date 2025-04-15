@@ -379,7 +379,7 @@
 
     .banner {
         height: 30vh;
-        width: 100%;
+        background-position: center;
     }
 
     .logo {
