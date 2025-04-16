@@ -22,13 +22,16 @@ body, html {
 }
 
 /*tarja amarela que divide ponta a pointa da página*/
+/*"a full-width yellow banner"*/
 .linha-quebra {
     background-color: #ffd700;
     width: 100%;
     height: 7px;
 }
 
-/*banner no tipo do site*/
+/*banner no topo do site*/
+/* top banner */
+
 .banner {
     background: url(../imagens/BANNER-TOPO.jpg)no-repeat center/cover;
     height: 100vh;
@@ -47,6 +50,8 @@ header {
 }
 
 /*logo da empresa localizada no header*/
+/* company logo in the header */
+
 .logo {
     margin: 2em 3em 0 1em;
     width: 100px;
@@ -61,12 +66,14 @@ nav {
 }
 
 /*links do header (navs)*/
+/* navigation links in the header */
 a {
     position: relative;
     text-decoration: none;
     color:#000000;
 }
 /*animação de sublinhado nas navs*/
+/* animated underline effect on navigation links */
 a:after {
     content: "";
     position: absolute;
@@ -84,6 +91,7 @@ a:hover:after {
 }
 
 /*posições dos botoes de cardápio*/
+/* menu button positioning */
 .navegacao-btn {
     display: flex;
     align-items: center;
@@ -91,6 +99,7 @@ a:hover:after {
     height: 30vh;
 }
 /*estilos dos botoes de cardápio*/
+/* menu button styles */
 .botoes{
     font-family: var(--font-p);
     font-weight: bolder;
@@ -102,6 +111,7 @@ a:hover:after {
     cursor: pointer;
 }
 /*estilização indivual de cada botão*/
+/* individual styles for each menu button */
 .pizza{
     background-color:#ac0c0cd0 ;
 }
@@ -123,12 +133,14 @@ a:hover:after {
 
 }
 /*animações em comum dos botões*/
+/* shared button animations */
 .pizza:hover, .porcoes:hover, .refri:hover {
     font-size: 17px;
     box-shadow: 0px 0px 8px gray;
 }
 
 /*container do cardápio de todos os produtos*/
+/* container holding the full product menu */
 .cardapio {
     position: relative;
     width: 100%;
@@ -137,6 +149,7 @@ a:hover:after {
     overflow: hidden;
 }
 /*estilização de todos os cardápios disponiveis em GRID*/
+/* styling all available menus using GRID */
 .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
     position: absolute;
     top: 50%;
@@ -156,6 +169,7 @@ a:hover:after {
     z-index: 1;
 }
 /*Hierarquia de cada cardápio (para Javascript)*/
+/* menu hierarchy (for JavaScript) */
 .cardapio-pizzas {
     opacity: 1;
 } 
@@ -165,6 +179,7 @@ a:hover:after {
 }
 
 /*Estilização e animação de todas as boxes do cardápio*/
+/* styling and animation of all menu items' boxes */
 .box {
     cursor: pointer;
     background-color: rgb(255, 255, 255);
@@ -186,6 +201,7 @@ a:hover:after {
 }
 
 /*container dos botoes de Adição e subtração de produto*/
+/* container for the product add and subtract buttons */
 .buy-btn {
     font-family: var(--font-p);
     position: relative;
@@ -212,6 +228,7 @@ a:hover:after {
 }
 
 /*Estilização de tudo que há dentro das boxes*/
+/* styling all contents inside the boxes */
 .produto-container {
     position: relative;
     align-items: center;
@@ -243,6 +260,7 @@ a:hover:after {
 }
 
 /*Estilização do final da página.*/
+/* styling the footer area of the page */
 footer {
     font-family: var(--font-footer);
     font-weight: lighter;
@@ -256,6 +274,7 @@ footer {
 
 }
 /*redes ficticías da empresa*/
+/* fictional company social media */
 .final {
     position: relative;
     justify-content: space-around;
@@ -269,6 +288,7 @@ footer {
 }
 
 /*Redes do Desenvolvedor*/
+/* Developer's social media */
 .MinhasInf {
     background-color: black;
     height: 5em;
