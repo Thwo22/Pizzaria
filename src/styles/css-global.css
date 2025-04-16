@@ -7,14 +7,17 @@
     --font-footer: "Red Hat Display", sans-serif;
     }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body, html {
-    background-color: white;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -128,26 +131,29 @@ a:hover:after {
 /*container do cardápio de todos os produtos*/
 .cardapio {
     position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 41em;
+    overflow: hidden;
 }
 /*estilização de todos os cardápios disponiveis em GRID*/
 .cardapio-pizzas, .cardapio-porcoes, .cardapio-refri {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
-    padding: 30px;
-    flex-direction: column;
-    margin: auto;
-    height: 40em;
-    width: 60em;
+    gap: 1em;
+    width: 70%;
+    max-width: 1200px;
+    max-width: 100%;
+    height: auto;
     transition: opacity 0.5s ease;
     z-index: 1;
-
 }
 /*Hierarquia de cada cardápio (para Javascript)*/
 .cardapio-pizzas {
@@ -242,29 +248,29 @@ footer {
     font-weight: lighter;
     font-size: 12px;
     text-align: center;
+
     color:white;
-    margin: 42em auto 0;
-    position: relative;
-    background: url(../imagens/footer.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 5em;
     width: 100%;
-    height: 90vh;
+    padding: 2em 0;
+
 }
 /*redes ficticías da empresa*/
 .final {
-    position: absolute;
-    width: 100%;
-    top: 70%;
-    align-items: center;
+    position: relative;
     justify-content: space-around;
+    text-align: left;
     display: flex;
+    background-image: linear-gradient(To bottom, #FF0000, black) ;
+    padding: 30px;
 }
+.redes {
+    text-align: center;
+}
+
 /*Redes do Desenvolvedor*/
 .MinhasInf {
     background-color: black;
     height: 5em;
-    position: absolute;
     width: 100%;
-    top: 100%;
 }
