@@ -7,20 +7,6 @@
     padding: 100px 100px;
 }
 
-/*TV*/
-@media (min-width:1163px) {
-
-
-    .banner {
-        height: 120vh;
-        width: 100%;
-    }
-
-    footer {
-        margin: 45em auto 0;
-    }
-
-}
 
 /*DESKTOPS MAIORES*/
 @media (min-width:1040px) and (max-width:1162px){
