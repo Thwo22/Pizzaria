@@ -31,10 +31,9 @@ body, html {
 
 /*banner no topo do site*/
 /* top banner */
-
 .banner {
     background: url(../imagens/BANNER-TOPO.jpg)no-repeat center/cover;
-    height: 100vh;
+    height: 760px;
     width: 100%;
 }
 
@@ -51,7 +50,6 @@ header {
 
 /*logo da empresa localizada no header*/
 /* company logo in the header */
-
 .logo {
     margin: 2em 3em 0 1em;
     width: 100px;
@@ -96,7 +94,7 @@ a:hover:after {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 30vh;
+    height: 100px;
 }
 /*estilos dos botoes de cardápio*/
 /* menu button styles */
@@ -268,7 +266,7 @@ footer {
     text-align: center;
 
     color:white;
-    height: 5em;
+    height: 150px;
     width: 100%;
     padding: 2em 0;
 
@@ -291,6 +289,6 @@ footer {
 /* Developer's social media */
 .MinhasInf {
     background-color: black;
-    height: 5em;
+    height: 70px;
     width: 100%;
 }
